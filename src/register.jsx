@@ -66,15 +66,15 @@ const Register = () => {
   };
 
   return (
-    <div className="bg-gray-100 flex items-center justify-center min-h-screen overflow-auto">
-      <form className=" w-full max-w-2xl p-16 bg-white shadow-2xl rounded-xl animate-loginCard-slideFadeIn">
-        <h2 className="text-3xl font-bold text-center tracking-widest">
+    <div className="bg-gray-900 flex items-center justify-center min-h-screen overflow-auto">
+      <form className=" w-full max-w-2xl p-16 bg-gray-800 shadow-2xl rounded-xl animate-loginCard-slideFadeIn">
+        <h2 className="text-3xl font-bold text-center tracking-widest text-white">
           SIGNUP
         </h2>
 
         <label
           htmlFor="firstname"
-          className="text-xl font-semibold text-center tracking-wider"
+          className="text-xl font-semibold text-center tracking-wider text-white"
         >
           First Name
         </label>
@@ -91,7 +91,7 @@ const Register = () => {
 
         <label
           htmlFor="middlename"
-          className="text-xl font-semibold text-center tracking-wider"
+          className="text-xl font-semibold text-center tracking-wider text-white"
         >
           Middle Name
         </label>
@@ -108,7 +108,7 @@ const Register = () => {
 
         <label
           htmlFor="lastname"
-          className="text-xl font-semibold text-center tracking-wider"
+          className="text-xl font-semibold text-center tracking-wider text-white"
         >
           Last Name
         </label>
@@ -125,7 +125,7 @@ const Register = () => {
 
         <label
           htmlFor="email"
-          className="text-xl font-semibold text-center tracking-wider"
+          className="text-xl font-semibold text-center tracking-wider text-white"
         >
           Email
         </label>
@@ -142,7 +142,7 @@ const Register = () => {
 
         <label
           htmlFor="username"
-          className="text-xl font-semibold text-center tracking-wider"
+          className="text-xl font-semibold text-center tracking-wider text-white"
         >
           Username
         </label>
@@ -159,7 +159,7 @@ const Register = () => {
 
         <label
           htmlFor="password"
-          className="text-xl font-semibold text-center tracking-wider"
+          className="text-xl font-semibold text-center tracking-wider text-white"
         >
           Password
         </label>
@@ -176,7 +176,7 @@ const Register = () => {
 
         <label
           htmlFor="retype-password"
-          className="text-xl font-semibold text-center tracking-wider"
+          className="text-xl font-semibold text-center tracking-wider text-white"
         >
           Re-type Password
         </label>
@@ -202,9 +202,9 @@ const Register = () => {
           SUBMIT
         </button>
 
-        <p>
+        <p className="text-white">
           Already have an account?
-          <Link to="/login" className="font-medium color">
+          <Link to="/login" className="font-medium text-green-600">
             {" "}
             Login
           </Link>

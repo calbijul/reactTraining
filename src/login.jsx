@@ -30,11 +30,11 @@ const Login = () => {
 
   return (
 
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <form className="w-85 p-16 bg-white shadow-2xl rounded-xl animate-loginCard-slideFadeIn">
-        <h2 className="text-3xl font-bold mb-4 text-center tracking-widest">LOGIN</h2>
+    <div className="min-h-screen flex items-center justify-center bg-gray-900">
+      <form className="w-85 p-16 bg-gray-800 shadow-2xl rounded-xl animate-loginCard-slideFadeIn">
+        <h2 className="text-3xl font-bold mb-4 text-center tracking-widest text-white">LOGIN</h2>
 
-        <label htmlFor="username" className="text-xl font-semibold text-center tracking-wider">Username</label>
+        <label htmlFor="username" className="text-xl font-semibold text-center tracking-wider text-white">Username</label>
         <input
           name="username"
           id="username"
@@ -43,7 +43,7 @@ const Login = () => {
           placeholder="Enter email or phone"
           className="p-6 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-green-600 mb-4 w-full font-medium"
         />
-        <label htmlFor="password" className="text-xl font-semibold text-center tracking-wider">Password</label>
+        <label htmlFor="password" className="text-xl font-semibold text-center tracking-wider text-white">Password</label>
         <input
           name="password"
           id="password"
@@ -56,7 +56,7 @@ const Login = () => {
         <button
           className="w-full py-3 mt-4 bg-green-700 text-white rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-blue-400 "
           onClick={handleSubmit}>SUBMIT</button>
-        <p>Doesn't have an account yet?<Link to="/register" className="font-medium color"> Sign up</Link></p>
+        <p className="text-white">Doesn't have an account yet?<Link to="/register" className="font-medium color text-green-600"> Sign up</Link></p>
 
         {showToast.message && (
           <div

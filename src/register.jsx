@@ -66,8 +66,8 @@ const Register = () => {
   };
 
   return (
-    <div className="bg-gray-900 flex items-center justify-center min-h-screen overflow-auto">
-      <form className=" w-full max-w-2xl p-16 bg-gray-800 shadow-2xl rounded-xl animate-loginCard-slideFadeIn">
+    <div className="login-background  bg-gray-900 flex items-center justify-center min-h-screen overflow-auto">
+      <form className="login-container  w-full max-w-2xl p-16 bg-gray-800 shadow-2xl rounded-xl animate-loginCard-slideFadeIn">
         <h2 className="text-3xl font-bold text-center tracking-widest text-white">
           SIGNUP
         </h2>

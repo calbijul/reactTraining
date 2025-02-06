@@ -212,7 +212,7 @@ const Register = () => {
 
         {showToast.message && (
           <div
-            className={`absolute top-10 left-[50%] -translate-x-[50%] mb-5 px-6 py-3 rounded-lg shadow-lg transition-all duration-500 
+            className={`toast delay-300 
               ${
                 showToast.type === "success" ? "bg-green-400" : "bg-red-400"
               } text-white`}

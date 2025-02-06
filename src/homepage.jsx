@@ -41,7 +41,7 @@ const Homepage = () => {
 
   return (
     <div className="min-h-screen flex flex-col animate-loginCard-slideFadeIn bg-gray-100 text-black">
-      <header className="bg-white p-5 px-7 shadow-md text-black flex justify-between items-center z-20 relative">
+      <header className="bg-white p-5 px-20 shadow-md text-black flex justify-between items-center z-20 relative">
         <h1 className="text-2xl font-bold tracking-widest text-green-600">GAISANO UNIVERSITY</h1>
 
         <nav className="flex space-x-4 overflow-x-auto">
@@ -73,7 +73,7 @@ const Homepage = () => {
       </header>
 
       <div className="flex flex-1">
-        <main className="flex-1 p-6">
+        <main className="flex-1 overflow-auto p-6 px-20">
           {activeView === 'dashboard' && (
             <div className="bg-white rounded-lg shadow-md mt-6">
               <div className="text-center p-6">
@@ -90,18 +90,18 @@ const Homepage = () => {
                 </h3>
                 <p className="text-xl mb-4 font-semibold tracking-wider leading-loose">
                   <span className="block animate-lineSlideFadeIn delay-200">
-                    The prestigious institution where <i>shopping</i> and <i>learning</i> merge in a seamless blend of consumerism and academia. Nestled in the heart of the Philippines, this one-
+                    The prestigious institution where <i>shopping</i> and <i>learning</i> merge in a seamless blend of consumerism and academia. Nestled in the heart of the Philippines, this one-of-a-kind educational establishment offers a diverse range of degrees, including Bachelor of Retail Therapy, Masters in Impulse Buying, and Doctorate in
                   </span>
                   <span className="block animate-lineSlideFadeIn delay-300">
-                    of-a-kind educational establishment offers a diverse range of degrees, including Bachelor of Retail Therapy, Masters in Impulse Buying, and Doctorate in Window Shopping. Forget traditional classrooms—here, lectures are held between the perfume counters and the latest smartphone displays. Graduates are highly sought after
+                    Window Shopping. Forget traditional classrooms—here, lectures are held between the perfume counters and the latest smartphone displays. Graduates are highly sought after  for their expertise in navigating endless sales, maximizing mall food court discounts, and mastering the art of finding the perfect parking spot. At Gaisano University, you’re not just a student—you’re a shopper with a degree!
                   </span>
-          
-                  <span className="block animate-lineSlideFadeIn delay-400">
-                     for their expertise in navigating endless sales, maximizing mall food court discounts, and mastering the art of finding the perfect parking spot. At Gaisano University,
+
+                  {/* <span className="block animate-lineSlideFadeIn delay-400">
+
                   </span>
                   <span className="block animate-lineSlideFadeIn delay-600">
-                     you’re not just a student—you’re a shopper with a degree!
-                  </span>
+
+                  </span> */}
                 </p>
               </div>
             </div>

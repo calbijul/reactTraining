@@ -88,6 +88,52 @@
 }
 
 
+.login-background {
+  position: relative;
+  height: 100vh; 
+  background-image: url('https://wallpapers.com/images/hd/mall-background-us7l9rtvqgm9c7ug.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.login-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(29, 48, 49, 0.795); 
+  z-index: 1; 
+}
+
+
+.login-container {
+  position: relative;  
+  z-index: 2; 
+}
+
+
+@keyframes slideFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-loginCard-slideFadeIn {
+  animation: slideFadeIn 1s ease-in;
+}
+
+
+
+
 
 
 

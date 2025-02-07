@@ -95,13 +95,6 @@ const Homepage = () => {
                   <span className="block animate-lineSlideFadeIn delay-300">
                     Window Shopping. Forget traditional classrooms—here, lectures are held between the perfume counters and the latest smartphone displays. Graduates are highly sought after  for their expertise in navigating endless sales, maximizing mall food court discounts, and mastering the art of finding the perfect parking spot. At Gaisano University, you’re not just a student—you’re a shopper with a degree!
                   </span>
-
-                  {/* <span className="block animate-lineSlideFadeIn delay-400">
-
-                  </span>
-                  <span className="block animate-lineSlideFadeIn delay-600">
-
-                  </span> */}
                 </p>
               </div>
             </div>

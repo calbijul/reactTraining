@@ -28,7 +28,14 @@ const Login = () => {
   };
 
   return (
-    <div className="login-background min-h-screen flex items-center justify-center">
+    <div className="login-background min-h-screen flex flex-col items-center justify-center">
+      
+      <div className="logo-container text-center mb-8 login-logo">
+        <img src="/path-to-your-logo.png" alt="Logo" className="mx-auto w-24 h-24" />
+        <h1 className="text-4xl font-extrabold text-white mt-4">Gaisano University</h1>
+      </div>
+
+    
       <form className="w-85 p-16 bg-gray-800 shadow-2xl rounded-xl animate-loginCard-slideFadeIn login-container">
         <h2 className="text-3xl font-bold mb-4 text-center tracking-widest text-white">LOGIN</h2>
 

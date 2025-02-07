@@ -196,7 +196,7 @@ const Register = () => {
         />
 
         <button
-          className="w-full py-3 mt-4 bg-green-700 text-white rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="w-full py-3 mt-4 font-semibold bg-purple-900 text-white rounded-lg hover:bg-purple-200 hover:text-purple-900 focus:outline-none focus:ring-2 focus:ring-purple-900 tracking-widest"
           onClick={handleSubmit}
         >
           SUBMIT
@@ -204,7 +204,7 @@ const Register = () => {
 
         <p className="text-white">
           Already have an account?
-          <Link to="/login" className="font-medium text-green-600">
+          <Link to="/login" className="font-medium text-purple-600 hover:text-white">
             {" "}
             Login
           </Link>

@@ -212,10 +212,7 @@ const Register = () => {
 
         {showToast.message && (
           <div
-            className={`toast delay-300 
-              ${
-                showToast.type === "success" ? "bg-green-400" : "bg-red-400"
-              } text-white`}
+            className={`toast delay-300 ${showToast.type === "success" ? "toast-success" : "toast-error"}`}
           >
             <p>{showToast.message}</p>
           </div>

@@ -31,8 +31,8 @@ const Login = () => {
     <div className="login-background min-h-screen flex flex-col items-center justify-center">
       
       <div className="logo-container text-center mb-8 login-logo">
-        <img src="/path-to-your-logo.png" alt="Logo" className="mx-auto w-24 h-24" />
-        <h1 className="text-4xl font-extrabold text-white mt-4">Gaisano University</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Gaisano_Capital_Logo.svg/640px-Gaisano_Capital_Logo.svg.png" alt="Logo" className="mx-auto w-24 h-24 shadow-lg" />
+        <h1 className="text-4xl font-extrabold text-white mt-3 shadow-lg">GAISANO UNIVERSITY</h1>
       </div>
 
     

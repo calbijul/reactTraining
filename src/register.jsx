@@ -84,7 +84,7 @@ const Register = () => {
           type="text"
           required
           placeholder="Enter First Name"
-          className="p-6 py-3 border mb-5 border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-green-600 w-full font-medium"
+          className="p-6 py-3 border mb-5 border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-purple-600 w-full font-medium"
           value={firstname}
           onChange={(e) => setFirstname(e.target.value)}
         />
@@ -101,7 +101,7 @@ const Register = () => {
           type="text"
           required
           placeholder="Enter Middle Name"
-          className="p-6 py-3 border mb-5 border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-green-600 w-full font-medium"
+          className="p-6 py-3 border mb-5 border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-purple-600 w-full font-medium"
           value={middlename}
           onChange={(e) => setMiddlename(e.target.value)}
         />
@@ -118,7 +118,7 @@ const Register = () => {
           type="text"
           required
           placeholder="Enter Last Name"
-          className="p-6 py-3 border mb-5 border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-green-600 w-full font-medium"
+          className="p-6 py-3 border mb-5 border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-purple-600 w-full font-medium"
           value={lastname}
           onChange={(e) => setLastname(e.target.value)}
         />
@@ -135,7 +135,7 @@ const Register = () => {
           type="email"
           required
           placeholder="Enter Email"
-          className="p-6 py-3 border mb-5 border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-green-600 w-full font-medium"
+          className="p-6 py-3 border mb-5 border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-purple-600 w-full font-medium"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
@@ -152,7 +152,7 @@ const Register = () => {
           type="text"
           required
           placeholder="Enter username"
-          className="p-6 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-green-600 mb-4 w-full font-medium"
+          className="p-6 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-purple-600 mb-4 w-full font-medium"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
@@ -169,7 +169,7 @@ const Register = () => {
           type="password"
           required
           placeholder="Enter password"
-          className="p-6 py-3 border mb-5 border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-green-600 w-full font-medium"
+          className="p-6 py-3 border mb-5 border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-purple-600 w-full font-medium"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
@@ -187,13 +187,16 @@ const Register = () => {
           required
           placeholder="Re-type password"
           className={`p-6 py-3 border mb-5 border-gray-300 rounded-lg focus:outline-none focus:ring-1 ${
-            password !== retypePassword
-              ? "focus:ring-red-600"
-              : "focus:ring-green-600"
+          password === "" || retypePassword === ""  
+          ? ""  
+          : password !== retypePassword
+          ? "bg-red-200"  
+          : "bg-green-200"  
           } w-full font-medium`}
           value={retypePassword}
           onChange={(e) => setRetypePassword(e.target.value)}
         />
+
 
         <button
           className="w-full py-3 mt-4 font-semibold bg-purple-900 text-white rounded-lg hover:bg-purple-200 hover:text-purple-900 focus:outline-none focus:ring-2 focus:ring-purple-900 tracking-widest"

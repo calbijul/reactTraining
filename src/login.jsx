@@ -31,12 +31,12 @@ const Login = () => {
     <div className="login-background min-h-screen flex flex-col items-center justify-center">
       
       <div className="logo-container text-center mb-8 login-logo -mt-28">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Gaisano_Capital_Logo.svg/640px-Gaisano_Capital_Logo.svg.png" alt="Logo" className="mx-auto w-24 h-24 shadow-lg animate-loginCard-slideFadeIn " />
-        <h1 className="text-4xl font-extrabold text-white mt-3 shadow-lg tracking-widest animate-loginCard-slideFadeIn">GAISANO UNIVERSITY</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Gaisano_Capital_Logo.svg/640px-Gaisano_Capital_Logo.svg.png " alt="Logo" className="mx-auto w-24 h-24 shadow-lg animate-slideFadeIn delay 100" />
+        <h1 className="text-4xl font-extrabold text-white mt-3 shadow-lg tracking-widest animate-slideFadeIn  delay-200">GAISANO UNIVERSITY</h1>
       </div>
 
     
-      <form className="w-85 p-16 bg-gray-800 shadow-2xl rounded-xl animate-loginCard-slideFadeIn login-container">
+      <form className="w-85 p-16 bg-gray-800 shadow-2xl rounded-xl animate-slideFadeIn delay-300 login-container">
         <h2 className="text-3xl font-bold mb-4 text-center tracking-widest text-white ">LOGIN</h2>
 
         <label htmlFor="username" className="text-xl font-semibold text-center tracking-wider text-white">Username</label>
